@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratihar Manish Gurjar Palace | Ultra Luxury</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        :root {
+            --gold: #D4AF37;
+            --black: #0a0a0a;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body { background-color: var(--black); color: white; scroll-behavior: smooth; }
+
+        /* Navigation */
+        nav {
+            background: rgba(0,0,0,0.9);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--gold); text-transform: uppercase; }
+
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-size: 14px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 10px; }
+
+        /* Main Gallery Section */
+        .container { padding: 50px 5%; }
+        h2.title { text-align: center; color: var(--gold); margin-bottom: 40px; font-size: 2.5rem; text-transform: uppercase; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--glass);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: 0.4s ease-in-out;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: var(--gold); }
+
+        .card img {
+            width: 100%;
+            height: 300px; /* High resolution height */
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-info { padding: 20px; text-align: center; }
+        .card-info h3 { color: var(--gold); margin-bottom: 10px; }
+
+        /* Special Lift Highlight */
+        .highlight-lift {
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Form Section */
+        .auth-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .form-box {
+            background: #111;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--gold);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #222;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: var(--gold);
+            color: black;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: white; }
+
+        /* AI Floating Bot */
+        .ai-bot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--gold);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 0 15px var(--gold);
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PM Gurjar Palace</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Pratihar Manish Gurjar Palace</h1>
+        <p> Your Dream Luxury Living Places </p>
+    </section>
+
+    <div class="container" id="gallery">
+        <h2 class="title">Exclusive Visuals</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260" alt="Royal Bedroom">
+                <div class="card-info">
+                    <h3>Royal Bedroom</h3>
+                    <p>AI Smart Climate & Voice Control</p>
+                </div>
+            </div>
+
+            <div class="card highlight-lift">
+                <img src="https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260" alt="High Tech Lift">
+                <div class="card-info">
+                    <h3>5th Floor Sky Lift</h3>
+                    <p>Panoramic City View - Glass Elevator</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260" alt="Swimming Pool">
+                <div class="card-info">
+                    <h3>Infinity Pool</h3>
+                    <p>Temperature Controlled Blue Oasis</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260" alt="Hotel View">
+                <div class="card-info">
+                    <h3>Grand Exterior</h3>
+                    <p>5-Storey Heritage Architecture</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title" id="login" style="margin-top: 60px;">Guest Portal</h2>
+        <div class="auth-container">
+            <div class="form-box">
+                <h3>Login</h3>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="btn">Login</button>
+            </div>
+            <div class="form-box">
+                <h3>Create Account</h3>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Create Password">
+                <button class="btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ai-bot" onclick="aiTalk()">🤖</div>
+
+    <script>
+        function aiTalk() {
+            alert("Welcome to Pratihar Manish Gurjar Palace AI Assistance! How can I help you today?");
+        }
+    </script>
+
+</body>
+</html>
